@@ -1,0 +1,31 @@
+### GET All
+GET http://localhost:8081/api/v1/user/
+
+### GET first one
+GET http://localhost:8081/api/v1/user/1
+
+### DELETE third one
+DELETE http://localhost:8081/api/v1/user/3
+
+### Create one
+POST http://localhost:8081/api/v1/user/
+Content-Type: application/json
+
+{
+  "name": "name4",
+  "code": "000004",
+  "email": "same4@gmail.com",
+  "password": "12348"
+}
+
+#### Update one
+PUT http://localhost:8081/api/v1/user/
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "name1up",
+  "code": "000001up",
+  "email": "same1up@gmail.com",
+  "password": "12345up"
+}
